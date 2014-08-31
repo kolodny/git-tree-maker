@@ -22,8 +22,7 @@ co(function *(){
         "c8.client": {
           c9: {}
         }
-      },
-      c3: {}
+      }
     }
   }
   yield gitTreeMaker(dir, tree);
