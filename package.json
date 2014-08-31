@@ -1,12 +1,12 @@
 {
   "name": "git-tree-maker",
   "version": "0.0.0",
-  "description": "",
+  "description": "Git Tree Maker",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --harmony"
   },
-  "author": "",
+  "author": "Moshe Kolodny",
   "license": "MIT",
   "dependencies": {
     "co": "^3.1.0",
@@ -18,5 +18,17 @@
     "mocha": "^1.21.4",
     "rimraf": "^2.2.8",
     "tmp": "0.0.24"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kolodny/git-tree-maker.git"
+  },
+  "keywords": [
+    "git",
+    "tree"
+  ],
+  "bugs": {
+    "url": "https://github.com/kolodny/git-tree-maker/issues"
+  },
+  "homepage": "https://github.com/kolodny/git-tree-maker"
 }
