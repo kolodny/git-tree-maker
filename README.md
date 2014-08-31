@@ -29,7 +29,9 @@ co(function *(){
   yield gitTreeMaker(dir, tree);
 })();
 ```
-/tmp/gittreepreview will now contain something like this ![tree](http://i.imgur.com/uEe2ojl.png):
+/tmp/gittreepreview will now contain something like this ![tree](http://i.imgur.com/uEe2ojl.png)
+
+
 same as http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases
 
 
