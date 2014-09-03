@@ -1,6 +1,6 @@
 {
   "name": "git-tree-maker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Git Tree Maker",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "co": "^3.1.0",
     "co-exec": "^1.1.0",
+    "commander": "^2.3.0",
     "mkdirp": "^0.5.0",
     "thunkify": "^2.1.2"
   },

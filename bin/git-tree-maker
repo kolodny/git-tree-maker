@@ -1,0 +1,29 @@
+#!/usr/bin/env node --harmony
+
+var program = require('commander');
+var fs = require('fs');
+var gitTreeMaker = require('..');
+var co = require('co');
+
+program.name = 'git-tree-maker';
+program
+  .version(require(__dirname + '/../package.json').version)
+  .usage('<directory> <tree>');
+
+program.on('--help', function() {
+  var name = this._name;
+  var exampleTree = JSON.stringify({a:{b:{"c.feature1": {}, "d.feature2": {}}}}, null, '    ').replace(/\n/g, '\n\t');
+
+  console.log('  Examples:');
+  console.log('');
+  console.log('    $ ' + name + ' /tmp/gittree \'' + exampleTree + '\'');
+  console.log('');
+});
+
+program.parse(process.argv);
+
+var args = program.args;
+
+co(function *() {
+  yield *gitTreeMaker(args[0], JSON.parse(args[1]));
+})();

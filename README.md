@@ -36,4 +36,10 @@ same as http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases
 
 ### command line usage
 
-Coming soon!
+    npm install -g git-tree-maker
+    git-tree-maker <dir> <tree>
+
+Or
+
+    npm install git-tree-maker
+    node_modules/.bin/git-tree-maker <dir> <tree>
