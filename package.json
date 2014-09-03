@@ -1,11 +1,14 @@
 {
   "name": "git-tree-maker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Git Tree Maker",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --harmony"
   },
+  "bin": {
+    "git-tree-maker": "./bin/git-tree-maker"
+    },
   "author": "Moshe Kolodny",
   "license": "MIT",
   "dependencies": {
